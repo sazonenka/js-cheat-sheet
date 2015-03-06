@@ -393,7 +393,7 @@ module.exports = function (grunt) {
         base: 'dist',
         push: false
       },
-      src: ['**/*']
+      src: ['**']
     }
   });
 
