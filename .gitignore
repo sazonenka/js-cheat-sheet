@@ -4,5 +4,7 @@ dist
 .sass-cache
 bower_components
 
+.grunt
+
 .idea
 *.iml
