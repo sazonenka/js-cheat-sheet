@@ -391,6 +391,7 @@ module.exports = function (grunt) {
     'gh-pages': {
       options: {
         base: 'dist',
+        push: false,
         dotfiles: true
       },
       src: ['**/*']
