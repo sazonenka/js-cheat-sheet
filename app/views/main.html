@@ -1,12 +1,12 @@
 <div class="container">
   <h2>JS Cheat Sheet</h2>
 
-  <table class="table table-bordered table-hover" style="font-size: 12px">
+  <table class="table table-bordered table-hover js-equality-table">
     <thead>
       <tr>
-        <th style="width: 250px"></th>
-        <th ng-repeat="testSnippet in testSnippets" style="width: {{ testSnippet.width }};">
-          {{ testSnippet.test }}
+        <th style="width: 210px"></th>
+        <th class="rotate" ng-repeat="testSnippet in testSnippets">
+          <div><span>{{ testSnippet }}</span></div>
         </th>
       </tr>
     </thead>
@@ -14,7 +14,7 @@
       <tr ng-repeat="initSnippet in initSnippets">
         <td>{{ initSnippet }}</td>
         <td ng-repeat="testSnippet in testSnippets">
-          {{ evalSnippet(initSnippet, testSnippet.test) }}
+          {{ evalSnippet(initSnippet, testSnippet) }}
         </td>
       </tr>
     </tbody>

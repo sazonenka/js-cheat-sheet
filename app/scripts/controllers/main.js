@@ -35,17 +35,23 @@ angular.module('jsCheatSheetApp')
     ];
 
     $scope.testSnippets = [
-      { test: 'typeof value', width: '150px' },
+      'typeof value',
 
-      { test: 'value == undefined', width: '170px' },
-      { test: 'value === undefined', width: '170px' },
+      'value == undefined',
+      'value === undefined',
 
-      { test: 'value == null', width: '150px' },
-      { test: 'value === null', width: '170px' },
+      'value == null',
+      'value === null',
 
-      { test: 'value ? "true" : "false"', width: '250px' },
-      { test: '!value', width: '100px' },
-      { test: '!!value', width: '100px' }
+      'value ? "true" : "false"',
+      '!value',
+      '!!value',
+
+      'value == 0',
+      'value > 0',
+      'value < 0',
+      'value >= 0',
+      'value <= 0'
     ];
 
     $scope.evalSnippet = function(initSnippet, testSnippet) {

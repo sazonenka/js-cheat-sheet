@@ -11,7 +11,6 @@ body {
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.marketing,
 .footer {
   padding-left: 15px;
   padding-right: 15px;
@@ -22,13 +21,6 @@ body {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 }
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
 
 /* Custom page footer */
 .footer {
@@ -37,24 +29,39 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
+.js-equality-table {
+  font-size: 12px;
+  overflow: hidden;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+.js-equality-table th,
+.js-equality-table td {
+  position: relative;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
+.js-equality-table th.rotate {
+  height: 150px;
+  white-space: nowrap;
 }
-.marketing p + h4 {
-  margin-top: 28px;
+
+.js-equality-table th.rotate > div {
+  margin: auto;
+  transform: rotate(-90deg);
+  width: 30px;
+}
+
+.js-equality-table th.rotate > div > span {
+  padding: 5px 10px;
+}
+
+.js-equality-table td:hover::after,
+.js-equality-table th:hover::after {
+  content: "";
+  position: absolute;
+  background-color: #f5f5f5;
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
 }
